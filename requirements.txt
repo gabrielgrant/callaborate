@@ -1,0 +1,5 @@
+Flask==0.10.1
+Flask-Cors==1.8.0
+gunicorn
+redis==2.8.0
+requests==0.14.1

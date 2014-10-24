@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html ng-app class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html ng-app class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html ng-app class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html ng-app class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Tell Republican Party Leaders: We Care About Corruption!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="Tell Republican Party Leaders: We Care About Corruption!"/>
+    <meta property="og:site_name" content="Mayday.US"/>
+    <meta property="og:url" content="http://call.mayday.us/"/>
+    <meta property="og:image" content="https://mayday.us/images/rubens_fb_share.jpeg"/>
+    <meta property="og:description" content="Jim Rubens is the leading Republican champion of anti-corruption reform. His election is today. Help us call every undecided voter in New Hampshire to let them know!"/>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="css/bootstrap-theme.min.css"> -->
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.min.js"></script>
+  <!--link href="/basic.css" media="all" rel="stylesheet" type="text/css" /-->
+  <link rel="stylesheet" href="//mayday.us/css/common.css?1">
+  <link rel="stylesheet" href="//mayday.us/css/index.css?7">
+
+  <link href='//fonts.googleapis.com/css?family=Roboto:400,300,500,900' rel='stylesheet' type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=Merriweather:700,400,700italic' rel='stylesheet' type='text/css'>
+  <!-- <link href='//fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'> -->
+  <style type="text/css" media="screen">
+    body{background:#fff;}
+  </style>
+
+  <!-- Caller-specific HEAD content -->
+  <script src="angular.min.js"></script>
+  <script src="app.js"></script>
+  <style>
+    body{
+      padding-bottom:0;
+    }
+    header {
+      padding-bottom: 2px;
+      margin-bottom: 1em;
+    }
+    header .row {
+      padding: 18px 0 12px;
+    }
+    header img {
+      width: 225px;
+      height: 30px;
+      visibility: hidden;
+    }
+    header button {
+      position: absolute;
+      z-index: 1;
+    }
+    .projects {
+      margin-top: 10px;
+    }
+    .projects > div {
+      margin-top: 1em;
+    }
+    .projects > div:nth-child(2n+1) {  /* project card */
+      clear: left;
+    }
+    .box {
+      box-shadow: 0px 1px 3px rgba(0,0,0,.25);
+      padding: 5px 20px;
+    }
+    .box small {
+      color: #999;
+    }
+    .welcome-modal {
+      width: 60%;
+      margin: auto;
+    }
+    .welcome-modal:before {
+      content: "";
+      display: block;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.5);
+    }
+    .signin-form .panel {
+      z-index: 1;
+    }
+    .welcome-modal .panel{
+      /*position: relative;*/
+      position: fixed;
+      top: 100px;
+      z-index: 1;
+      width: 60%;
+    }
+    .welcome-modal .panel-heading, .signin-form .panel-heading {
+      padding: 10px 20px;
+    }
+    .call-control {
+      font-size: 1.2em;
+    }
+    .sidepanel-scroller {
+      position: fixed;
+      width: 37%;
+    }
+    footer{
+      padding-top:20px;
+    }
+  </style>
+  <script src="//c.shpg.org/220/sp.js"></script>
+  <!-- End of Caller-specific HEAD content -->
+  <script>
+   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+
+   ga('create', 'UA-50367295-1', 'mayday.us');
+   ga('require', 'displayfeatures');
+
+   ga('send', 'pageview');
+  </script>
+</head>
+
+<body>
+  <!--[if lt IE 8]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+<div ng-controller="CallerController">
+<header class="navbar navbar-fixed-top">
+  <div class="container" style="position:relative">
+    <a class="navbar-brand ir" href="#">MAYDAY.US</a>
+    <div class="row navbar-social"  style="">
+      <div class="navbar-header pull-right  hidden-xs hidden-sm">
+        <div class="">
+          <ul class="nav navbar-nav">
+            <li>&nbsp;</li>
+            <li>&nbsp;</li>
+            <li>&nbsp;</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header-bg-1"></div>
+  <div class="header-bg-2">
+    <div class="row">
+      <div class="col-xs-offset-11 col-xs-1" ng-hide="state.startsWith('landing.')">
+            <button style="margin-top: -13px;" class="btn btn-default" ng-click="showWelcome = true">Help</button>
+          </div>
+    </div>
+  </div>
+</header>
+
+<!-- Caller-specific BODY content -->
+      <header>
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-11">
+              <img src="images/logo-9.svg" alt="MayDay PAC Logo" />
+            </div>
+          </div>
+        </div>
+      </header>
+      <p style="display: none;">state: {{state}}; showWelcome: {{showWelcome}}</p>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="alert alert-info" ng-show="status == 'saving'">
+              Saving...
+            </div>
+            <div class="alert alert-warning" ng-show="status && status != 'saving'">
+              {{status}}
+            </div>
+            <!--div class="alert alert-success alert-dismissible" role="alert" ng-show="success">
+              <button type="button" class="close" ng-click="success = false"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+              Thanks for Dialing for Democracy! Click "place another call" to dial the next person on your list.
+            </div-->
+          </div><!-- end of col -->
+        </div><!-- end of .row -->
+        <div class="landing" ng-show="state.startsWith('landing.')">
+          <div class="signin-form col-xs-12">
+            <div class="jumbotron">
+            <h2>Let's Dial for Democracy!</h2>
+                <p>
+                Jim Rubens is the leading Republican champion of anti-corruption reform, and he's facing off against ex-lobbyist Scott Brown in the New Hampshire Primary <em>today!</em> Rubens has cut Brown's lead in half in the last week, but still has a long way to go until everyone knows his name.</p>
+                <p><strong>The Primary is TODAY! Help us call every undecided voter in New Hampshire to enlist their help. We're sending Republican party leaders a message: voters care about corruption.</strong></p>
+            </div>
+          </div>
+          <div class="signin-form col-sm-8">
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <form role="form" name="signinForm" ng-show="state == 'landing.signin'">
+                  <div class="form-group col-xs-6">
+                    <label>Your name</label>
+                    <input type="text" class="form-control" placeholder="First Name" ng-model="id.firstName">
+                  </div>
+                  <div class="form-group col-xs-6">
+                    <label></label>
+                    <!--label for="signupName">Your last name</label-->
+                    <input type="text" class="form-control" placeholder="Last Name" ng-model="id.lastName">
+                  </div>
+                  <div class="form-group col-xs-12">
+                    <label for="signupEmail1">Your email address</label>
+                    <input type="email" class="form-control" placeholder="Enter email" ng-model="id.emailAddress">
+                  </div>
+                  <div class="form-group col-xs-6">
+                    <label for="signupEmail1">Your phone number (required)</label>
+                    <input type="tel" pattern="[0-9]{3}-?[0-9]{3}-?[0-9]{3}" class="form-control" placeholder="555-555-5555" ng-model="id.phoneNumber" required>
+                    <span class="help-block">Used to connect you to voters</span>
+                  </div>
+                  <div class="form-group col-xs-6">
+                    <label for="signupEmail1">Your ZIP code</label>
+                    <input type="text" pattern="[0-9]{5}" class="form-control" placeholder="Enter 5-digit ZIP" ng-model="id.zipCode">
+                    <span class="help-block">Used to find voters nearby, if possible</span>
+                  </div>
+                  <div class="col-xs-6">
+                    <button type="submit" class="btn btn-default " ng-disabled="signinForm.$invalid" ng-click="signin()">Sign In</button>
+                  </div>
+                </form>
+                <div class="col-xs-12" ng-show="state == 'landing.index'">
+                  <p>Here’s how the call tool works:</p>
+                  <small>
+                  <ol>
+                  <li>Enter your information (so we know who made which calls)</li>
+                  <li>Review the call scripts and get comfortable with what you’re going to say</li>
+                  <li>When you’re ready, click “Connect Now”. Our system will call your number. You don’t have to dial anything. </li>
+                  <li>Click the "start calling voters" button and we'll try to connected you to a real live person in New Hampshire.</li>
+                  <li>Keep calling! Remember, we're going to get a lot of unanswered phones, voicemail boxes, and some wrong numbers. Don't give up -- just click the appropriate button, and move on to the next call.</li>
+                  </ol>
+                  </small>
+                  <button type="submit" class="btn btn-default btn-primary pull-right" ng-click="state = 'landing.signin'">Start Using the Call Tool</button>
+                </div>
+              </div>
+            </div>
+          </div><!-- end of .signin-form -->
+          <div class="leaderboard col-sm-4">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <p style="text-align: center;">{{leaderBoard.length}} volunteers have called {{totalCalled}} voters</p>
+              </div>
+              <div class="panel-body">
+                <p style="text-align: center;"><small>Top {{leaderBoard.slice(0,5).length}} Callers</small></p>
+                <table class="table">
+                  <tr>
+                    <th>Rank</th>
+                    <th>Name</th>
+                    <th># of calls</th>
+                  </tr>
+                  <tr ng-repeat="leader in leaderBoard.slice(0,5)">
+                    <td>{{$index + 1}}</td>
+                    <td>{{leader.name}}</td>
+                    <td>{{leader.calls}}</td>
+                  </tr>
+                </table>
+              </div><!-- end of .panel-body -->
+            </div><!-- end of .panel-default -->
+          </div><!-- end of .leaderboard -->
+        </div><!-- end of .signin -->
+        <div class="row" ng-hide="state.startsWith('landing.')">
+          <div class="col-xs-5 call-control">
+            <div class="sidepanel-scroller">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  Calling Info
+                </div>
+                <div class="panel-body" ng-show="state == 'after_hours'">
+                  <!--h2>Sorry, we're done for the night!</h2>
+                  <p>We're only making calls until 9:30pm New Hampshire time each evening. Please try again tomorrow -- we start up at 9am.</p-->
+                  <h2>That's all, folks!</h2>
+                  <p>The New Hampshire polls have closed, so we're done for the time being. Watch your email for updates about the next time we put the call tool into action. And please let us know about any questions, problems or feedback by emailing <a href="info@mayday.us">info@mayday.us</a>!</p-->
+                </div><!-- end of .panel-body -->
+                <div class="panel-body" ng-show="state == 'disconnected'">
+                  <p>First, read through the script.</p>
+                  <p>Next, click "Connect Now" to plug into the system: we'll call your phone then connect you with the next voter on the list.</p>
+                  <button ng-click="connect_caller()">Connect Now</button>
+                </div><!-- end of .panel-body -->
+                <div class="panel-body" ng-show="state == 'connecting'">
+                  <p>Calling you now. It may take several seconds to ring.</p>
+                  <p>Once you've listened to the instructions, start placing calls to voters.</p>
+                  <button ng-click="connect_callee()">Start calling voters now</button>
+                </div><!-- end of .panel-body -->
+                <div class="panel-body" ng-show="state == 'connected.calling' || state == 'connected.saving'">
+                  <p>Calling <strong>{{callee.firstName}} {{callee.lastName}}</strong> now. It may take a few seconds to start ringing.</p>
+                  <ol>
+                  <li>To disconnect (eg. voicemail) press * and stay on the line</li>
+                  <li>Save the caller's responses, or press the appropriate button below (if you didn't get answers)</li>
+                  <li>Finally, connect with the next voter.</li>
+                  </ol>
+                  <button ng-click="saveStatus('Busy')">Line was busy</button>
+                  <button ng-click="saveStatus('No answer')">No answer/Voicemail</button>
+                  <button ng-click="saveStatus('Do not call')">Do not call</button>
+                  <button ng-click="saveStatus('Wrong Info')">Wrong info/Deceased</button>
+                </div>
+                <div class="panel-body" ng-show="state == 'connected.hungup'">
+                  <p>The call results have been saved. Thanks for Dialing for Democracy!</p>
+                  <p>Press "*" on your phone to make sure your previous call is disconnected, then call the next person on the list.</p>
+                  <button ng-click="connect_callee()">Place another call</button>
+                </div>
+              </div><!-- end of .panel -->
+              <p ng-hide="state == 'disconnected' || state == 'after_hours'"><small>Not properly connected? <a ng-click="connect_caller()">Click here to get called again</a></small></p>
+              <p>
+                Come <a target="_blank"href="http://us21.chatzy.com/66874859339673">join the callers&rsquo; live chat!</a><br/>
+                You can also send feedback to <a href="info@mayday.us">info@mayday.us</a>
+              </p>
+              <div class="panel panel-default" ng-show="state == 'connected.waiting'">
+                <div class="panel-heading">
+                  Call Recipient
+                </div>
+                <div class="panel-body">
+                  <h3>{{callee.firstName}} {{callee.lastName}}</h3>
+                  <p>Lives in {{callee.residential_city}}</p>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-body">
+                  <p>You've made {{numCalls}} call<span ng-hide="numCalls == 1">s</span> so far this session. <span ng-show="numCalls">That's awesome!</span> {{leaderBoard[0].name}}, the top caller, has made {{leaderBoard[0].calls}}. So <span ng-show="numCalls">keep</span><span ng-hide="numCalls">start</span> dialing :)</p>
+                </div>
+              </div>
+            </div><!-- end of sidepanel-scroller -->
+          </div><!-- end of .control -->
+          <div class="col-xs-7 script">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                Call Script
+                <span style="float: right">
+                <button
+                  ng-click="showVoicemailScript = true"
+                  ng-hide="showVoicemailScript">
+                  Show Voicemail Script
+                </button>
+                <button
+                  ng-click="showVoicemailScript = false"
+                  ng-show="showVoicemailScript">
+                  Hide Voicemail Script
+                </button>
+                </span>
+                <div ng-show="showVoicemailScript">
+                  <p>
+                    Hi, my name is <span ng-hide="id.firstName">&lt;Your Name&gt;</span>{{id.firstName}}.
+                  </p>
+                  <p>
+                    I'm calling to remind you that Today, September 9th is the New Hampshire State Primary.
+                  </p>
+                  <p>
+                    I’m volunteering with a non-partisan group to stop political corruption. We're called Mayday dot US and we're supporting Jim Rubens. He's the only Republican candidate who has the character and courage to take a stand against corruption in Washington. By supporting the Taxation Only With Representation Act, Jim is going to fight for us. But first, we need to fight for him by showing up at the polls.
+                  </p>
+                  <p>
+                    If you need help finding out where to vote, please visit jimrubens.com and click on “Election Day”. We can also help you find a ride to the polls.
+                  </p>
+                  <p>
+                    Thank you and please remember to vote for Jim Rubens.
+                  </p>
+                </div>
+              </div>
+              <div class="panel-body">
+                <p>Hi, can I speak with <span ng-hide="callee.firstName">&lt;Voter's Name&gt;</span>{{callee.firstName}}?</p>
+
+                <p>Hi, how are you?</p>
+
+                <p>I'm <span ng-hide="id.firstName">&lt;Your Name&gt;</span>{{id.firstName}} -- I'm volunteering with a non-partisan group to stop political corruption. We're called Mayday dot US. Don't worry, I'm not asking for money.</p>
+
+                <p><strong>I think that big donors and special interests have too much influence in Washington. Would you agree?</strong></p>
+
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="willVoteCorruption" value="Stong yes"
+                    ng-model="callInfo.willVoteCorruption"
+                    ng-disabled="state != 'connected.calling'">
+                    Strong Yes
+                  </lablel>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="willVoteCorruption" value="Weak yes"
+                    ng-model="callInfo.willVoteCorruption"
+                    ng-disabled="state != 'connected.calling'">
+                    Weak Yes
+                  </lablel>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="willVoteCorruption" value="Maybe"
+                    ng-model="callInfo.willVoteCorruption"
+                    ng-disabled="state != 'connected.calling'">
+                    Maybe
+                  </lablel>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="willVoteCorruption" value="No"
+                    ng-model="callInfo.willVoteCorruption"
+                    ng-disabled="state != 'connected.calling'">
+                    No
+                  </lablel>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="willVoteCorruption" value="Wants more info"
+                    ng-model="callInfo.willVoteCorruption"
+                    ng-disabled="state != 'connected.calling'">
+                    Wants more information
+                  </lablel>
+                </div>
+
+                <p>&nbsp; &nbsp; &lt; <em>If no, optionally ask "really, why not?", record their comments, thank them, and end the call</em> &gt;</p>
+
+                <p><strong>Did you know there's a Republican candidate in the Primary Election today who has a specific plan to reign in special interests?</strong></p>
+
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="knowsRubens" value="Yes"
+                    ng-model="callInfo.knowsRubens"
+                    ng-disabled="state != 'connected.calling'">
+                    Yes
+                  </lablel>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="knowsRubens" value="No"
+                    ng-model="callInfo.knowsRubens"
+                    ng-disabled="state != 'connected.calling'">
+                    No
+                  </lablel>
+                </div>
+
+                <p>Jim Rubens is running against Scott Brown. Brown isn't even from New Hampshire and he's taking millions from special interests.</p>
+
+                <p>He's pretending that he's already won the nomination. But in the last couple weeks Rubens has almost caught up, because he's getting people excited about fixing our democracy.</p>
+
+                <p>Political insiders say we don't care about corruption. Voting for Rubens proves we do.</p>
+
+                <p><strong>Were you planning to vote in today's primary?</strong></p>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="votesInPrimaries" value="Yes"
+                    ng-model="callInfo.votesInPrimaries"
+                    ng-disabled="state != 'connected.calling'">
+                    Yes
+                  </lablel>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="votesInPrimaries" value="No"
+                    ng-model="callInfo.votesInPrimaries"
+                    ng-disabled="state != 'connected.calling'">
+                    No
+                  </lablel>
+                </div>
+
+                <p ng-hide="callInfo.votesInPrimaries"><em>If yes:</em></p>
+                <p ng-hide="callInfo.votesInPrimaries == 'No'"><strong>Can we count on you to vote in the Republican primary for Jim Rubens?</strong></p>
+
+                <p ng-hide="callInfo.votesInPrimaries"><em>If no:</em></p>
+                <p ng-hide="callInfo.votesInPrimaries == 'Yes'">Look, lobbyists spend every day, convincing politicians to work against us. Voting in this primary is our chance to send a message back that this corruption has to stop.</p>
+                <p ng-hide="callInfo.votesInPrimaries == 'Yes'"><strong>Would you please consider changing your mind and going out to vote for Jim Rubens?</strong></p>
+
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="willVoteRubens" value="Stong yes"
+                    ng-model="callInfo.willVoteRubens"
+                    ng-disabled="state != 'connected.calling'">
+                    Strong Yes
+                  </lablel>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="willVoteRubens" value="Weak yes"
+                    ng-model="callInfo.willVoteRubens"
+                    ng-disabled="state != 'connected.calling'">
+                    Weak Yes
+                  </lablel>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="willVoteRubens" value="Maybe"
+                    ng-model="callInfo.willVoteRubens"
+                    ng-disabled="state != 'connected.calling'">
+                    Maybe
+                  </lablel>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="willVoteRubens" value="No"
+                    ng-model="callInfo.willVoteRubens"
+                    ng-disabled="state != 'connected.calling'">
+                    No
+                  </lablel>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="willVoteRubens" value="Wants more info"
+                    ng-model="callInfo.willVoteRubens"
+                    ng-disabled="state != 'connected.calling'">
+                    Wants more information
+                  </lablel>
+                </div>
+
+                <p>Great! Let’s make sure all of New Hampshire is a part of this. Go talk to your friends and neighbors, get everybody out to vote.</p>
+
+                <p>Do you know where your polling place is?</p>
+
+                <p>&nbsp; &nbsp;&lt; </em>If they don't know where their polling station is, you can help them find it <a target="_blank" href="http://cfs.sos.nh.gov/app/Public/PollingPlaceSearch.aspx">here.</a> For privacy, search by street name and odd/even number, rather than by name/birth date</em> &gt;</p>
+
+                <p>Excellent. Thanks again for talking with me today, and see you out at the polls!</p>
+                <div class="form-group">
+                  <label for="callComments"><em>Comments about the call:</em></label>
+                  <textarea class="form-control" rows="3" ng-model="callInfo.comments" id="callComments"
+                    ng-disabled="state != 'connected.calling'"></textarea>
+                </div>
+                <button ng-click="saveStatus('Connected')" ng-disabled="state != 'connected.calling'">Save</button>
+              </div><!-- end of .panel-body -->
+            </div><!-- end of .panel -->
+          </div><!-- end of .script -->
+        </div><!-- end of .row -->
+      </div><!-- end of .container -->
+        
+        <div class="welcome-modal" ng-show="showWelcome && !state.startsWith('landing.')">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <button type="button" class="close" ng-click="showWelcome = false"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+              <h2>Thanks for volunteering to Dial for Democracy!</h2>
+            </div>
+            <div class="panel-body">
+              <p>Here's what you need to know:</p>
+              <ol>
+                <li><strong>Get Prepared:</strong> Read through the script so you're familiar with it before you start talking to voters.</li>
+                <li><strong>Start calling:</strong> Click the "connect now" button and we'll dial your number to connect you into the system.</li>
+                <li><strong>Speak naturally:</strong> Mayday is about real people connecting with each other. Use the script as a guide, but let yourself show through too!</li>
+                <li><strong>Enter data:</strong> Complete the survey answers for each call as you make it. Click the "save" button at the bottom of the page when you're done.</li>
+                <li><strong>Don't hang up!</strong> Press * to end a call instead of hanging up. When you're ready, we'll automatically connect you to the next person on your list</li>
+              </ol>
+              <p>If you have any problems, questions or feedback please email <a href="mailto:info@mayday.us">info@mayday.us</a></p>
+              <button class="btn btn-default" ng-click="showWelcome = false">Continue to call tool</button>
+            </div>
+          </div>
+        
+        </div><!-- end of .welcome.modal -->
+    </div><!-- end of Controller -->
+
+<!-- End of Caller-specific BODY content -->
+
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <div class="safeharbor">
+          <p>
+            Paid for by Mayday PAC. <br/>
+            Not authorized by any candidate or candidate's committee.<br/>
+            MAYDAY.US
+          </p>
+        </div>
+        <p class="copyright">&copy; 2014 Mayday PAC, Some rights reserved. <a href="http://creativecommons.org/licenses/by-sa/4.0">
+      <img src="//mayday.us/images/80x15.png"></p>
+      </div>
+      <div class="col-md-4">
+        <!-- <a href="#" class="ir social-link youtube" title="Youtube Page">Youtube Page</a> -->
+        <a href="https://twitter.com/MAYDAYUS" class="ir social-link twitter" title="Twitter Page">Twitter Page</a>
+        <a href="https://www.facebook.com/groups/282646648577039/" class="ir social-link facebook" title="Facebook Page">Facebook Page</a>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
