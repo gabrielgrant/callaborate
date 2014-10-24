@@ -1,5 +1,5 @@
 
-_Call-aborate_ lets volunteers sign in to call potential supporters. It presents callers with a script and embedded questions, then calls their phone and connects them to the next call recipient. When the call is complete, the caller records the outcome and they are connected to the next number. All info is logged in Redis, and completed call info is stored in a Google Spreadsheet via a Form for easy access.
+_Call-aborate_ lets volunteers sign in to call potential supporters. It presents callers with a script and embedded questions, then calls their phone and connects them to the next call recipient. When the call is complete, the caller records the outcome and they are connected to the next number. All detailed info is logged in Redis, and completed call results are stored in a Google Spreadsheet via a Form for easy access.
 
 Demo: http://call.mayday.us
 
@@ -72,7 +72,7 @@ You'll likely want to edit the included `config.json.example` (and save it as `c
 `CALL_DATA_FORM`: JSON object containing info about the Google Spreadsheet/Form:
 
 - `url` is the `formResponse` URL (ie the page that the form `POST`s to)
-- `fields` is a set of mappings describing which Google form fields should be filled with what info. Info can come from the `caller`, `callee`, and `call` fields. Generally only the `call` fields should change to reflect the specific questions asked in the survey.
+- `fields` is a set of mappings describing which Google form fields should be filled with what info. Info can come from the `caller`, `callee`, and `call` fields. Generally only the `call` fields should change to reflect the specific questions asked in the survey. You'll need to find the correct values by inspecting the Google Form to find the `name` value for each `input` element.
 
 
 Redis
@@ -109,10 +109,12 @@ Deploy
 
 The app is designed to be deployed on Heroku. You'll likely want to install [Heroku's command-line client (CLI)](https://toolbelt.heroku.com/) (note that you can create the app through Heroku's control panel and add the `heroku` git remote manually if you don't want to bother installing the Heroku CLI).
 
-First commit any changes you've made (likely to the config file):
+First commit any changes you've made (likely edits to the call script and/or config file):
 
+    git add static/index.html
+    git commit -m "write a call script"
     git add config.json
-    git commit -m "config changes"
+    git commit -m "set up form mappings in config.json"
 
 Then create the Heroku app and deploy:
 
