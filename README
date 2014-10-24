@@ -1,7 +1,7 @@
-Basic auto-dialing call tool
 
-Presents volunteers with a script and automatically connects them to the next call recipient. All info is logged in Redis, and completed call info is stored in a Google Spreadsheet via a Form.
+_Call-aborate_ lets volunteers sign in to call potential supporters. It presents callers with a script and embedded questions, then calls their phone and connects them to the next call recipient. When the call is complete, the caller records the outcome and they are connected to the next number. All info is logged in Redis, and completed call info is stored in a Google Spreadsheet via a Form for easy access.
 
+Demo: http://call.mayday.us
 
 Script
 ------
